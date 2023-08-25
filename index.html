@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="general-container header-container">
+      <div class="container g_con">
+        <div class="header-center">
+          <div class="main-header">
+            <header>
+              <h1>Stay Updated!</h1>
+              <p>Join 60,00+ product managers receiving monthly updates on:</p>
+            </header>
+            <main>
+              <ul>
+                <div class="list-item">
+                  <img src="/assets/images/icon-list.svg" alt="" />
+                  <li class="product">
+                    Product discovery and building what matters
+                  </li>
+                </div>
+                <div class="list-item">
+                  <img src="/assets/images/icon-list.svg" alt="" />
+                  <li>Measuring to ensure updates are a success</li>
+                </div>
+                <div class="list-item">
+                  <img src="/assets/images/icon-list.svg" alt="" />
+                  <li>And much more!</li>
+                </div>
+              </ul>
+              <form action="">
+                <div class="label">
+                  <label id="email" for="email">Email address</label>
+                <div class="description">
+                  <p class="content">Valid email required</p>
+                </div>
+                </div><br />
+                <input
+                  type="email"
+                  id="mail-box"
+                  name="mail"
+                  placeholder="email@company.com"
+                />
+              </form>
+            </main>
+            <button>Subscribe to monthly newsletter</button>
+          </div>
+          <div class="image">
+            <img
+              class="image-desktop"
+              src="/assets/images/illustration-sign-up-desktop.svg"
+              alt="image"
+            />
+            <img
+              class="flex-image image-mobile"
+              src="/assets/images/illustration-sign-up-mobile.svg"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="success-msg"></div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

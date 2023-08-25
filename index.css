@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --font-size: 16px;
+  --family: "Roboto", sans-serif;
+  --weights: ;
+}
+body {
+  background: var(--Charcoal-Grey);
+  font-family: var(--family);
+}
+
+.general-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.header-center {
+  background: var(--White);
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px 20px 20px 40px;
+}
+header h1 {
+  font-family: var(--family);
+  font-size: 50px;
+  color: var(--Charcoal-Grey);
+}
+header p {
+  margin: 20px 0;
+  font-family: var(--family);
+  color: var(--Charcoal-Grey);
+  font-size: 15px;
+  width: 350px;
+}
+ul li {
+  list-style-type: none;
+  line-height: 1.8rem;
+  font-size: 14px;
+  color: var(--Charcoal-Grey);
+}
+.list-item {
+  display: flex;
+  gap: 10px;
+  font-family: var(--family);
+  font-size: 12px;
+}
+main form {
+  padding: 20px 0;
+}
+#email {
+  font-family: var(--family);
+  font-weight: 700;
+  color: var(--Charcoal-Grey);
+}
+main input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--Grey);
+  outline: none;
+  margin: 5px 0;
+}
+main input::placeholder {
+  color: var(--Grey);
+  font-family: var(--family);
+}
+main input:hover {
+  border: 1px solid var(--Charcoal-Grey);
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  color: var(--White);
+  background: var(--Charcoal-Grey);
+  font-family: var(--family);
+  font-size: 16px;
+}
+button:hover {
+  cursor: pointer;
+  background: var(--Tomato);
+  transition-duration: 0.5s;
+}
+.image-desktop{
+  height: 480px;
+  display: block;
+}
+.image-mobile {
+  display: none;
+}
+.g_Container{
+  background: var(--White);
+  width: 330px;
+  padding: 30px;
+  border-radius: 15px;
+  font-family: var(--family);
+}
+h2.content {
+  padding: 20px 0;
+  font-size: 35px;
+  color: var(--Charcoal-Grey);
+}
+.g_Container p{
+  color: var(--Charcoal-Grey);
+  font-size: 14px;
+  font-weight: 400;
+}
+.img{
+  width: 40px;
+}
+.btn{
+  margin-top: 20px;
+
+} 
+input.error{
+  background: rgba(255, 192, 203, 0.2);
+  border: 1px solid var(--Tomato);
+  color: var(--Tomato);
+}
+.label{
+  display: flex;
+  gap: 100px;
+}
+p.content{
+  display: none;
+  color: red;
+}
+
+
+@media (max-width: 500px) {
+  .general-container{
+  height: 100%;
+}
+  .header-center {
+    gap: 10px;
+    flex-direction: column-reverse;
+    border-radius: 1px;
+    padding: 20px 20px 20px 40px;
+  }
+  .image-desktop {
+  display: none;
+}
+  .image-mobile {
+    display: block;
+    width: 500px;
+    position: relative;
+    right: -22px;
+    top: -20px;
+  }
+  header h1 {
+  font-size: 40px;
+}
+.g_Container{
+  background: var(--White);
+  height: 100vh;
+  padding: 100px 20px;
+  border-radius: 1px;
+}
+.img{
+  width: 50px;
+}
+.btn{
+  margin-top: 200px;
+} 
+}
+
